@@ -25,6 +25,11 @@ body {
     margin-bottom: 10px;
 }
 
+.subtitulo {
+    font-size: 1.1em;
+    color: #8B7355;
+}
+
 /* Apresentação */
 .apresentacao {
     text-align: center;
@@ -82,6 +87,32 @@ body {
     font-size: 1.4em;
     font-weight: bold;
     color: #C17C5B;
+}
+
+/* Instruções */
+.instrucoes {
+    background-color: #FFFCF2;
+    border: 2px solid #E8DCC4;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.instrucoes h2 {
+    margin-bottom: 20px;
+}
+
+.instrucoes ol {
+    text-align: left;
+    margin: 0 auto 25px auto;
+    max-width: 320px;
+    padding-left: 20px;
+}
+
+.instrucoes li {
+    margin-bottom: 10px;
 }
 
 /* Botão */

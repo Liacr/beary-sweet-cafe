@@ -10,12 +10,13 @@
 
     <header class="cabecalho">
         <h1>🧸 Beary Sweet Café</h1>
+        <p class="subtitulo">Um cantinho cheio de doces fofinhos e carinho de cafeteria</p>
     </header>
 
     <main>
         <section class="apresentacao">
             <h2>Nossos Docinhos</h2>
-            <p>Escolha seus favoritos!</p>
+            <p>Escolha seus favoritos e simule sua compra!</p>
         </section>
 
         <section class="produtos">
@@ -25,12 +26,14 @@
                 <p class="descricao">Massa de baunilha fofinha com cobertura de chocolate e carinha de ursinho</p>
                 <p class="preco">R$ 12,00</p>
             </div>
+
             <div class="card-produto">
                 <div class="emoji-produto">🍩</div>
                 <h3>Donut Fofo Recheado</h3>
                 <p class="descricao">Donut macio recheado de doce de leite com glacê colorido e granulado</p>
                 <p class="preco">R$ 8,00</p>
             </div>
+
             <div class="card-produto">
                 <div class="emoji-produto">☕</div>
                 <h3>Capuccino de Ursinho</h3>
@@ -38,11 +41,24 @@
                 <p class="preco">R$ 10,00</p>
             </div>
         </section>
+
+        <section class="instrucoes">
+            <h2>Como funciona?</h2>
+            <ol>
+                <li>Clique no botão <strong>"Simular Compra"</strong></li>
+                <li>Digite a quantidade que deseja de cada produto</li>
+                <li>Digite <strong>0</strong> se não quiser comprar algum item</li>
+                <li>Veja o resumo da sua compra!</li>
+            </ol>
+            <button class="botao-comprar" onclick="simularCompra()">🛒 Simular Compra</button>
+        </section>
     </main>
 
     <footer class="rodape">
-        <p>Feito com 💜 por <strong>Lianna</strong></p>
+        <p>Feito com 💚 por <strong>Lianna</strong></p>
         <p>Trilha: Desenvolvimento Mobile</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
