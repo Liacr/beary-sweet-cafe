@@ -24,10 +24,10 @@ function simularCompra() {
     var valorGeral = totalCupcake + totalDonut + totalCapuccino;
 
     alert(
-        "🧾 Resumo da Compra - Beary Sweet Café 🐻\n\n" +
-        "🧁 Cupcake de Ursinho: " + qtdCupcake + "x = R$ " + totalCupcake + "\n" +
-        "🍩 Donut Fofo: " + qtdDonut + "x = R$ " + totalDonut + "\n" +
-        "☕ Capuccino de Ursinho: " + qtdCapuccino + "x = R$ " + totalCapuccino + "\n\n" +
+        "🧾 Resumo da Compra, Beary Sweet Café 🐻\n\n" +
+        "Cupcake Charmoso: " + qtdCupcake + "x = R$ " + totalCupcake + "\n" +
+        "Donut Fofo: " + qtdDonut + "x = R$ " + totalDonut + "\n" +
+        "Capuccino Preguiçoso: " + qtdCapuccino + "x = R$ " + totalCapuccino + "\n\n" +
         "💰 Total da Compra: R$ " + valorGeral + "\n\n" +
         "Obrigada pela preferência! ✨"
     );
