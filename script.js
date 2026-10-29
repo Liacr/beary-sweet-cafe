@@ -3,17 +3,24 @@ var precoDonut = 18.0;
 var precoCapuccino = 10.0;
 
 function simularCompra() {
-    var qtdCupcake = Number(prompt("Quantos Cupcakes de Ursinho você quer? (R$ 14,00)"));
-    var qtdDonut = Number(prompt("Quantos Donuts Fofos você quer? (R$ 18,00)"));
-    var qtdCapuccino = Number(prompt("Quantos Capuccinos de Ursinho você quer? (R$ 10,00)"));
+    var qtdCupcake = Number(prompt("Quantos Cupcakes Charmoso você quer? (0 a 99) - R$ 14,00"));
+    var qtdDonut = Number(prompt("Quantos Donuts Fofos você quer? (0 a 99) - R$ 18,00"));
+    var qtdCapuccino = Number(prompt("Quantos Capuccinos Preguiçoso você quer? (0 a 99) - R$ 10,00"));
 
     if (isNaN(qtdCupcake) || isNaN(qtdDonut) || isNaN(qtdCapuccino)) {
-        alert("Ops! Você digitou uma letra em vez de número. Por favor, tente novamente digitando apenas números! 🧸");
+        alert("Ops! Você digitou uma letra em vez de número. Por favor, tente novamente digitando apenas números!");
+        return;
+    }
+
+    if (qtdCupcake < 0 || qtdCupcake > 99 || 
+        qtdDonut < 0 || qtdDonut > 99 || 
+        qtdCapuccino < 0 || qtdCapuccino > 99) {
+        alert("Ops! Por favor, digite quantidades entre 0 e 99 para cada item!");
         return;
     }
 
     if (qtdCupcake === 0 && qtdDonut === 0 && qtdCapuccino === 0) {
-        alert("Nenhum produto foi selecionado! Volte sempre 🧸");
+        alert("Nenhum produto foi selecionado! Volte sempre!");
         return;
     }
 
