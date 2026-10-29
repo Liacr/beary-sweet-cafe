@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beary Sweet Café</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
     <header class="cabecalho">
         <div class="logo">
-            <h1>🧸 Beary Sweet Café</h1>
-            <p class="subtitulo">Confeitaria & Cafeteria Artesanal</p>
+            <img src="assets/sweet_bear.png" alt="Logo Beary Sweet Café" class="logo-img">
+            <h1>Beary Sweet Café</h1>
         </div>
+            <p class="subtitulo">Confeitaria & Cafeteria Artesanal</p>
     </header>
 
     <main>
@@ -22,39 +25,38 @@
 
         <section class="produtos">
             <article class="card-produto">
-                <div class="emoji-produto">🧁</div>
-                <h3>Cupcake Cremoso</h3>
-                <p class="descricao">Massa de baunilha fofinha com cobertura de chantilly</p>
-                <p class="preco">R$ 12,00</p>
+                <img src="assets/cupcake.png" alt="Cupcake de Ursinho" class="imagem-produto">
+                <h3>Cupcake Charmoso</h3>
+                <p class="descricao">Massa de chocolate fofinha em urso com cobertura de chantilly</p>
+                <p class="preco">R$ 14,00</p>
             </article>
 
             <article class="card-produto">
-                <div class="emoji-produto">🍩</div>
+                <img src="assets/donut.png" alt="Donut Fofo Recheado" class="imagem-produto">
                 <h3>Donut Fofo Recheado</h3>
-                <p class="descricao">Donut macio recheado de doce de leite com chocolate e granulado</p>
-                <p class="preco">R$ 8,00</p>
+                <p class="descricao">Donut macio com recheio patissière e cobertura de baunilha em foquinha</p>
+                <p class="preco">R$ 18,00</p>
             </article>
 
             <article class="card-produto">
-                <div class="emoji-produto">☕</div>
-                <h3>Capuccino de Caramelo</h3>
-                <p class="descricao">Capuccino cremoso quentinho com essência de caramelo</p>
+                <img src="assets/capuccino.png" alt="Capuccino de Ursinho" class="imagem-produto">
+                <h3>Capuccino Preguiçoso</h3>
+                <p class="descricao">Capuccino cremoso de caramelo com espuma de chocolate em urso</p>
                 <p class="preco">R$ 10,00</p>
             </article>
         </section>
 
         <section class="checkout-container">
             <div class="checkout-card">
-                <h2>🛍️ Faça seu Pedido</h2>
+                <h2>Faça seu Pedido</h2>
                 <p>Clique no botão abaixo para escolher a quantidade de cada item e simular o valor total do seu pedido no balcão.</p>
-                <button class="botao-comprar" onclick="simularCompra()">Iniciar Pedido 🛒</button>
+                <button class="botao-comprar" onclick="simularCompra()">Iniciar Pedido</button>
             </div>
         </section>
     </main>
 
     <footer class="rodape">
-        <p>Beary Sweet Café &copy; 2026</p>
-        <p>Desenvolvido por Lianna | Trilha: Desenvolvimento Mobile</p>
+        <p>Lianna Cavalcante &copy; 2026 | Desenvolvimento Mobile</p>
     </footer>
 
     <script src="script.js"></script>

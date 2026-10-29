@@ -2,28 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
-    background-color: #FFFDF9;
+    background-color: #fffdf9;
     color: #4A3B32;
     line-height: 1.6;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fundo-doodle.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    opacity: 0.08;
+    z-index: -1;
 }
 
 /* Cabeçalho */
 .cabecalho {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     background: linear-gradient(135deg, #FFE8D6, #FDF0E2);
+    box-shadow: 0px 6px 16px rgba(74, 69, 64, 0.229);
     border-bottom: 3px dashed #E6CCB2;
-    box-shadow: 0 4px 15px rgba(230, 204, 178, 0.2);
 }
 
 .cabecalho h1 {
     font-size: 2.8em;
     color: #9C6644;
     margin-bottom: 8px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo h1 {
+    text-shadow: 4px 4px 0px #ffffff; 
 }
 
 .subtitulo {
@@ -48,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    padding: 22px;
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
@@ -56,7 +84,6 @@ body {
 
 .card-produto {
     background-color: #FFFFFF;
-    border: 2px solid #E6CCB2;
     border-radius: 20px;
     padding: 25px 20px;
     width: 300px;
@@ -68,11 +95,11 @@ body {
 .card-produto:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 25px rgba(156, 102, 68, 0.15);
-    border-color: #DDA15E;
 }
 
-.emoji-produto {
-    font-size: 4em;
+.imagem-produto {
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
     background-color: #FAF0E6;
     width: 90px;
@@ -103,16 +130,16 @@ body {
 }
 
 .checkout-container {
-    padding: 20px;
+    padding: 10px;
     max-width: 520px;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .checkout-card {
-    background-color: #F4F1DE;
+    background-color: #FFF0E5;
     border: 2px solid #E6CCB2;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(156, 102, 68, 0.1);
 }
@@ -152,6 +179,7 @@ body {
     padding: 25px 20px;
     background-color: #FFE8D6;
     border-top: 3px dashed #E6CCB2;
+    box-shadow: 0px -6px 16px rgba(74, 69, 64, 0.229);
     margin-top: 40px;
     color: #8C7A6B;
 }

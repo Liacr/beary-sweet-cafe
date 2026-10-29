@@ -1,10 +1,10 @@
-var precoCupcake = 12.0;
-var precoDonut = 8.0;
+var precoCupcake = 14.0;
+var precoDonut = 18.0;
 var precoCapuccino = 10.0;
 
 function simularCompra() {
-    var qtdCupcake = Number(prompt("Quantos Cupcakes de Ursinho você quer? (R$ 12,00)"));
-    var qtdDonut = Number(prompt("Quantos Donuts Fofos você quer? (R$ 8,00)"));
+    var qtdCupcake = Number(prompt("Quantos Cupcakes de Ursinho você quer? (R$ 14,00)"));
+    var qtdDonut = Number(prompt("Quantos Donuts Fofos você quer? (R$ 18,00)"));
     var qtdCapuccino = Number(prompt("Quantos Capuccinos de Ursinho você quer? (R$ 10,00)"));
 
     if (isNaN(qtdCupcake) || isNaN(qtdDonut) || isNaN(qtdCapuccino)) {
