@@ -47,6 +47,7 @@ O **Beary Sweet Café** é uma loja fictícia inspirada em confeitarias e cafete
 4. Clique no botão **"Simular Compra"** para rodar a simulação de compra no navegador.
 
 ## 📸 Captura de Tela da Página
+<img width="1152" height="1083" alt="sweetcakesite" src="https://github.com/user-attachments/assets/513df217-0cbf-4cd3-9543-b1e5af6c4e1e" />
 
 ## 🧪 Testes Realizados
 
